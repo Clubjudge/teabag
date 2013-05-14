@@ -30,12 +30,12 @@
               Teabag: '/assets'
             }
           });
-          require(<%= json_escape @suite.spec_javascripts_for_require.to_json.html_safe %>, function () {
+          require(<%= @suite.spec_javascripts_for_require.to_json.html_safe %>, function () {
             Teabag.execute();
           });
         });
       </script>
-      
+
     <% end %>
   </head>
   <body>
